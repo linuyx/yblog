@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-gray-50 to-white py-20 md:py-32">
+    <!-- Hero Section with Claude-style grid pattern -->
+    <section class="bg-hero-pattern relative overflow-hidden py-20 md:py-32">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -24,8 +24,8 @@
       </div>
     </section>
 
-    <!-- Featured Posts Section -->
-    <section class="py-16 md:py-24">
+    <!-- Featured Posts Section with subtle grid -->
+    <section class="bg-grid-pattern py-16 md:py-24">
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -80,8 +80,8 @@
       </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="bg-gray-50 py-16 md:py-24">
+    <!-- About Preview Section with dot pattern -->
+    <section class="bg-dot-pattern py-16 md:py-24">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">

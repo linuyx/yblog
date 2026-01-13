@@ -8,9 +8,10 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: {
-        default: 'github-light',
-        dark: 'github-dark',
+        default: 'one-dark-pro',
+        dark: 'one-dark-pro',
       },
+      preload: ['vue', 'javascript', 'typescript', 'jsx', 'tsx', 'css', 'scss', 'html', 'json', 'bash', 'markdown'],
     },
   },
 

@@ -1,41 +1,47 @@
 <template>
-  <header class="bg-white border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/90">
+  <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
     <nav class="container-custom">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <NuxtLink to="/" class="flex items-center space-x-2">
-          <span class="text-2xl font-bold text-gray-900">YBlog</span>
+        <NuxtLink to="/" class="flex items-center space-x-2 group">
+          <div class="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center mr-2">
+            <span class="text-white font-bold text-sm">Y</span>
+          </div>
+          <span class="text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">YBlog</span>
         </NuxtLink>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
           <NuxtLink
             to="/"
-            class="text-gray-600 hover:text-gray-900 transition-colors"
-            active-class="text-gray-900 font-medium"
+            class="text-gray-600 hover:text-primary-600 transition-colors relative"
+            active-class="text-primary-600 font-medium"
           >
             首页
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
           </NuxtLink>
           <NuxtLink
             to="/blog"
-            class="text-gray-600 hover:text-gray-900 transition-colors"
-            active-class="text-gray-900 font-medium"
+            class="text-gray-600 hover:text-primary-600 transition-colors relative"
+            active-class="text-primary-600 font-medium"
           >
             文章
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
           </NuxtLink>
           <NuxtLink
             to="/about"
-            class="text-gray-600 hover:text-gray-900 transition-colors"
-            active-class="text-gray-900 font-medium"
+            class="text-gray-600 hover:text-primary-600 transition-colors relative"
+            active-class="text-primary-600 font-medium"
           >
             关于
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all group-hover:w-full"></span>
           </NuxtLink>
         </div>
 
         <!-- Mobile menu button -->
         <button
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          class="md:hidden p-2 rounded-md text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-colors"
         >
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -49,24 +55,24 @@
         <div class="flex flex-col space-y-3">
           <NuxtLink
             to="/"
-            class="text-gray-600 hover:text-gray-900 transition-colors px-3 py-2 rounded-md hover:bg-gray-100"
-            active-class="text-gray-900 font-medium bg-gray-100"
+            class="text-gray-600 hover:text-primary-600 transition-colors px-3 py-2 rounded-md hover:bg-primary-50"
+            active-class="text-primary-600 font-medium bg-primary-50"
             @click="mobileMenuOpen = false"
           >
             首页
           </NuxtLink>
           <NuxtLink
             to="/blog"
-            class="text-gray-600 hover:text-gray-900 transition-colors px-3 py-2 rounded-md hover:bg-gray-100"
-            active-class="text-gray-900 font-medium bg-gray-100"
+            class="text-gray-600 hover:text-primary-600 transition-colors px-3 py-2 rounded-md hover:bg-primary-50"
+            active-class="text-primary-600 font-medium bg-primary-50"
             @click="mobileMenuOpen = false"
           >
             文章
           </NuxtLink>
           <NuxtLink
             to="/about"
-            class="text-gray-600 hover:text-gray-900 transition-colors px-3 py-2 rounded-md hover:bg-gray-100"
-            active-class="text-gray-900 font-medium bg-gray-100"
+            class="text-gray-600 hover:text-primary-600 transition-colors px-3 py-2 rounded-md hover:bg-primary-50"
+            active-class="text-primary-600 font-medium bg-primary-50"
             @click="mobileMenuOpen = false"
           >
             关于
