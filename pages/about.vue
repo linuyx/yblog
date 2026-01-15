@@ -17,7 +17,7 @@
           <div class="prose prose-lg max-w-none">
             <h2 class="text-2xl font-bold text-gray-900 mb-4">你好！</h2>
             <p class="text-gray-700 leading-relaxed mb-6">
-              欢迎来到我的个人博客。我是一名开发者，热爱学习新技术，享受创造的过程。
+              欢迎来到“一只韩非子”的个人博客。我是一名开发者，热爱学习新技术，享受创造的过程。
               这个博客是我记录学习笔记、分享技术见解和思考的地方。
             </p>
             <p class="text-gray-700 leading-relaxed mb-6">
