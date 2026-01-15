@@ -29,4 +29,4 @@ docker run -d \
 --name yblog yblog
 
 echo "✅ 部署完成！"
-echo "🌐 访问地址: http://111.228.0.215/
+echo "🌐 访问地址: http://111.228.0.215/"
