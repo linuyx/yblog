@@ -1,5 +1,5 @@
 # 使用官方 Node 镜像
-FROM node:laster
+FROM node:latest
 
 # 创建工作目录
 WORKDIR /app
