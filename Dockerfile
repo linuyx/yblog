@@ -1,5 +1,5 @@
 # 使用官方 Node 镜像
-FROM node:22.22.0
+FROM node:22.22
 
 # 创建工作目录
 WORKDIR /app
