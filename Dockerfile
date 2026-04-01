@@ -9,7 +9,7 @@ COPY . .
 
 # 安装依赖 & 构建
 RUN npm install -g pnpm
-RUN pnpm install && pnpm run build
+RUN pnpm install && NODE_OPTIONS=--max-old-space-size=512 pnpm run build
 
 # 暴露端口
 EXPOSE 3000
